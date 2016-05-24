@@ -1,0 +1,32 @@
+object Form3: TForm3
+  Left = 299
+  Height = 260
+  Top = 82
+  Width = 335
+  Caption = 'Справка'
+  ClientHeight = 240
+  ClientWidth = 335
+  Color = 16777158
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '1.6.0.4'
+  object Memo1: TMemo
+    Left = 16
+    Height = 194
+    Top = 16
+    Width = 296
+    Lines.Strings = (
+      'Memo1'
+    )
+    OnChange = Memo1Change
+    TabOrder = 0
+  end
+  object MainMenu1: TMainMenu
+    left = 16
+    top = 224
+    object MenuItem1: TMenuItem
+      Caption = 'закрыть'
+      OnClick = MenuItem1Click
+    end
+  end
+end
